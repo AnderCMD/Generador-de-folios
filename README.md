@@ -1,5 +1,7 @@
 # Generador-Folios
 
+[![Wallaby.js](https://img.shields.io/badge/wallaby.js-powered-blue.svg?style=for-the-badge&logo=github)](https://wallabyjs.com/oss/)
+
 Módulo para generar folios secuenciales alfanuméricos en múltiples lenguajes de programación, útil para sistemas de facturación, tickets, inventarios y cualquier aplicación que requiera identificadores únicos legibles. Sigue el formato:
 
 ```
