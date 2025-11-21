@@ -1,12 +1,8 @@
 # Folio Generator
 
-<<<<<<< HEAD
 [![Wallaby.js](https://img.shields.io/badge/wallaby.js-powered-blue.svg?style=for-the-badge&logo=github)](https://wallabyjs.com/oss/)
 
-Módulo para generar folios secuenciales alfanuméricos en múltiples lenguajes de programación, útil para sistemas de facturación, tickets, inventarios y cualquier aplicación que requiera identificadores únicos legibles. Sigue el formato:
-=======
 A robust, multi-language library to generate sequential alphanumeric codes (folios) like `A00001`, `A00002`, ..., `Z99999`, `AA00001`.
->>>>>>> 4c95f04 (Feat: Version 1.0.0)
 
 This repository contains production-ready implementations in:
 
