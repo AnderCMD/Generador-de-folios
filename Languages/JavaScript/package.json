@@ -1,0 +1,27 @@
+{
+    "name": "folio-generator-js",
+    "version": "1.0.0",
+    "description": "A library to generate sequential alphanumeric codes.",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "node tests/test.js"
+    },
+    "keywords": [
+        "folio",
+        "generator",
+        "sequence",
+        "alphanumeric"
+    ],
+    "author": "AnderCMD",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AnderCMD/Generador-de-folios.git"
+    },
+    "files": [
+        "src",
+        "LICENSE",
+        "README.md",
+        "package.json"
+    ]
+}
