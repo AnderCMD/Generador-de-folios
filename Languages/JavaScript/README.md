@@ -1,5 +1,8 @@
 # Folio Generator (JavaScript)
 
+[![npm](https://img.shields.io/npm/v/folio-generator-js?label=npm&logo=npm&color=cb3837)](https://www.npmjs.com/package/folio-generator-js)
+[![downloads](https://img.shields.io/npm/dm/folio-generator-js?label=downloads&logo=npm&color=cb3837)](https://www.npmjs.com/package/folio-generator-js)
+
 A robust and flexible JavaScript library to generate sequential alphanumeric codes (folios). It supports custom padding, separators, and collision handling.
 
 ## Features

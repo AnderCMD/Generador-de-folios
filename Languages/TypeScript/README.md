@@ -1,5 +1,8 @@
 # Folio Generator (TypeScript)
 
+[![npm](https://img.shields.io/npm/v/folio-generator-ts?label=npm&logo=npm&color=3178c6)](https://www.npmjs.com/package/folio-generator-ts)
+[![downloads](https://img.shields.io/npm/dm/folio-generator-ts?label=downloads&logo=npm&color=3178c6)](https://www.npmjs.com/package/folio-generator-ts)
+
 A robust and flexible TypeScript library to generate sequential alphanumeric codes (folios). It supports custom padding, separators, and collision handling, with full type safety.
 
 ## Features
