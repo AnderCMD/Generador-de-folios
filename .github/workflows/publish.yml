@@ -12,11 +12,15 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24.x'
           registry-url: 'https://registry.npmjs.org'
-      
+
+      - name: Update npm
+        run: npm install -g npm@latest
+
       - name: Install dependencies
         working-directory: ./Languages/JavaScript
         run: npm install
@@ -27,7 +31,7 @@ jobs:
 
       - name: Publish JavaScript Package
         working-directory: ./Languages/JavaScript
-        run: npm publish --provenance
+        run: npm publish --access public --provenance
 
   publish-ts:
     runs-on: ubuntu-latest
@@ -36,11 +40,15 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24.x'
           registry-url: 'https://registry.npmjs.org'
-      
+
+      - name: Update npm
+        run: npm install -g npm@latest
+
       - name: Install dependencies
         working-directory: ./Languages/TypeScript
         run: npm ci
@@ -55,4 +63,4 @@ jobs:
 
       - name: Publish TypeScript Package
         working-directory: ./Languages/TypeScript
-        run: npm publish --provenance
+        run: npm publish --access public --provenance
