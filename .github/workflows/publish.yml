@@ -1,0 +1,56 @@
+name: Publish to NPM
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish-js:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+      
+      - name: Install dependencies
+        working-directory: ./Languages/JavaScript
+        run: npm install
+
+      - name: Run tests
+        working-directory: ./Languages/JavaScript
+        run: npm test
+
+      - name: Publish JavaScript Package
+        working-directory: ./Languages/JavaScript
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  publish-ts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+      
+      - name: Install dependencies
+        working-directory: ./Languages/TypeScript
+        run: npm ci
+
+      - name: Build
+        working-directory: ./Languages/TypeScript
+        run: npm run build
+
+      - name: Run tests
+        working-directory: ./Languages/TypeScript
+        run: npm test
+
+      - name: Publish TypeScript Package
+        working-directory: ./Languages/TypeScript
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
