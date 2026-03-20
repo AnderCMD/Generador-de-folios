@@ -1,8 +1,13 @@
 {
     "name": "folio-generator-js",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A library to generate sequential alphanumeric codes.",
     "main": "src/index.js",
+    "exports": {
+        ".": {
+            "default": "./src/index.js"
+        }
+    },
     "scripts": {
         "test": "node tests/test.js"
     },

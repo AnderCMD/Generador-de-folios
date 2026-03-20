@@ -1,9 +1,15 @@
 {
     "name": "folio-generator-ts",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A library to generate sequential alphanumeric codes.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+        }
+    },
     "scripts": {
         "build": "tsc",
         "test": "ts-node tests/test.ts"
